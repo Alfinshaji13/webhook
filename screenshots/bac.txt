@@ -1,0 +1,7 @@
+hai hello how are u......
+<<<<<<< HEAD
+dfghjklsdfghj
+sdfghj
+=======
+abcdefghijklmnop
+>>>>>>> 98972dccc05e7c5d2866d5a68a00ddc115b4f3bb
