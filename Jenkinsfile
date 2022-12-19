@@ -10,6 +10,13 @@ pipeline {
                 bat 'mvn clean install'
             }
         }
+         stage ('Code Quality') {
+            steps {
+                withSonarQubeEnv('sonarqube-9.7.1') {
+                bat 'mvn -f MyWebApp/pom.xml sonar:sonar'
+                }
+      }
+    }
         
     }
 }
