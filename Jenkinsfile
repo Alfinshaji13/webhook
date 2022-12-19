@@ -13,7 +13,7 @@ pipeline {
          stage ('Code Quality') {
             steps {
                 withSonarQubeEnv('sonarqube-9.7.1') {
-                bat 'mvn -f MyWebApp/pom.xml sonar:sonar'
+                bat 'mvn -f pom.xml sonar:sonar'
                 }
       }
     }
