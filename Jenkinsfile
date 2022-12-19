@@ -12,7 +12,7 @@ pipeline {
         }
          stage ('Code Quality') {
             steps {
-                withSonarQubeEnv('sonarqube-9.7.1') {
+                withSonarQubeEnv('sonarqubeScanner-4.7.0') {
                 bat 'mvn -f pom.xml sonar:sonar'
                 }
       }
